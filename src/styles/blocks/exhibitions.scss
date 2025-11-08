@@ -132,6 +132,28 @@
     justify-content: center;
     align-items: center;
 
+    border: none;
+    transition: all 0.3s ease;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #f1f5f4;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
+
     @include on-tablet {
       margin-top: 40px;
       width: 330px;
@@ -143,19 +165,7 @@
     }
   }
 
-  &__card-button-link {
-    font-family: Raleway, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-
-    color: #f1f5f4;
-    text-decoration: none;
-  }
-
+  
   &__buttons {
     margin-top: 30px;
 
@@ -190,16 +200,8 @@
     align-items: center;
     gap: 8px;
 
-    @include on-tablet {
-      width: 210px;
-    }
+    transition: all 0.3s ease;
 
-    @include on-desktop {
-      width: 270px;
-    }
-  }
-
-  &__button-link {
     font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -210,5 +212,23 @@
     text-decoration: none;
 
     color: #cd4d31;
+
+    &:hover {
+      border: 1px solid #af3419;
+      color: #af3419;
+    }
+
+    &:active {
+      border: 1px solid #ea340d;
+      color: #ea340d;
+    }
+
+    @include on-tablet {
+      width: 210px;
+    }
+
+    @include on-desktop {
+      width: 270px;
+    }
   }
 }

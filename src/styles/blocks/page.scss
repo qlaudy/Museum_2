@@ -4,7 +4,11 @@
   &__body {
     margin: 0;
 
-    background-color: #F1F5F4;
+    background-color: #f1f5f4;
+  }
+
+  body:has(.page__menu:target) {
+    overflow: hidden;
   }
 
   &__menu {
@@ -17,6 +21,7 @@
     transition: all 0.3s;
     transform: translateX(-100%);
     pointer-events: none;
+    overflow: hidden;
 
     &:target {
       opacity: 1;

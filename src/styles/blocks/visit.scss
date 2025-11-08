@@ -107,6 +107,28 @@
     justify-content: center;
     align-items: center;
 
+    transition: all 0.3s ease;
+    border: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #f1f5f4;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
+
     @include on-tablet {
       margin-top: 60px;
 
@@ -118,18 +140,5 @@
 
       width: 270px;
     }
-  }
-
-  &__button-link {
-    font-family: Raleway, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-
-    color: #f1f5f4;
-    text-decoration: none;
   }
 }

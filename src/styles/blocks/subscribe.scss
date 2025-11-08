@@ -92,7 +92,7 @@
     @include on-desktop {
       gap: 40px;
 
-       grid-column: span 5;
+      grid-column: span 5;
     }
   }
 
@@ -130,7 +130,6 @@
     width: 280px;
     height: 60px;
 
-    border: 1px solid #cd4d31;
     background-color: #cd4d31;
 
     font-family: Raleway, sans-serif;
@@ -142,6 +141,17 @@
     vertical-align: middle;
 
     color: #f1f5f4;
+
+    transition: all 0.3s ease;
+    border: none;
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
 
     @include on-tablet {
       width: 330px;
