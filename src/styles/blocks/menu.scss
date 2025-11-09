@@ -4,9 +4,7 @@
   width: 100%;
   height: 100vh;
 
-  @include on-desktop {
-    height: auto;
-  }
+  
 
   &__nav {
     padding-right: 20px;
